@@ -11,6 +11,12 @@ import { StudentsListComponent } from './components/students-list/students-list.
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from './material.module';
 
+/* Angular http service */
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+
+/* Angular CRUD services */
+import { ApiService } from './shared/api.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,9 +28,10 @@ import { AngularMaterialModule } from './material.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    AngularMaterialModule
+    AngularMaterialModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ApiService],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
