@@ -13,6 +13,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatTableModule } from '@angular/material/table';
@@ -33,6 +34,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
         MatSelectModule,
         MatRadioModule,
         MatDatepickerModule,
+        MatNativeDateModule,
         MatChipsModule,
         MatTooltipModule,
         MatTableModule,
@@ -40,21 +42,22 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     ],
     exports: [
         MatButtonModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatBadgeModule,
-    MatSidenavModule,
-    MatListModule,
-    MatGridListModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatSelectModule,
-    MatRadioModule,
-    MatDatepickerModule,
-    MatChipsModule,
-    MatTooltipModule,
-    MatTableModule,
-    MatPaginatorModule
+        MatToolbarModule,
+        MatIconModule,
+        MatBadgeModule,
+        MatSidenavModule,
+        MatListModule,
+        MatGridListModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatSelectModule,
+        MatRadioModule,
+        MatDatepickerModule,
+        MatNativeDateModule,
+        MatChipsModule,
+        MatTooltipModule,
+        MatTableModule,
+        MatPaginatorModule
     ],
     providers: [
         MatDatepickerModule

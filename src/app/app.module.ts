@@ -17,6 +17,9 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 /* Angular CRUD services */
 import { ApiService } from './shared/api.service';
 
+/* Reactive form service in Angular */
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +32,9 @@ import { ApiService } from './shared/api.service';
     AppRoutingModule,
     BrowserAnimationsModule,
     AngularMaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [ApiService],
   bootstrap: [AppComponent],
