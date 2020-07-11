@@ -19,7 +19,7 @@ mongoose.connect(dataBaseConfig.db, {
 )
 
 // Set up express js port
-const studentRoute = require('./routes/student.route')
+// const studentRoute = require('./routes/student.route')
 
 const app = express()
 app.use(bodyParser.json());
@@ -31,8 +31,8 @@ app.use(cors());
 // Setting up static directory
 app.use(express.static(path.join(__dirname, 'dist/student-records')));
 
-// RESTful API root
-app.use('./api', studentRoute)
+// // RESTful API root
+// app.use('./api', studentRoute)
 
 // PORT
 const port = process.env.PORT || 8000;
@@ -46,18 +46,18 @@ app.use((req, res, next) => {
     next(createError(404));
 });
 
-// Index Route
-app.get('/', (req, res) => {
-    res.send('invalid endpoint');
-});
+// // Index Route
+// app.get('/', (req, res) => {
+//     res.send('invalid endpoint');
+// });
 
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'dist/student-records'));
-});
+// app.get('*', (req, res) => {
+//     res.sendFile(path.join(__dirname, 'dist/student-records'));
+// });
 
-// error handler
-app.use(function (err, req, res, next) {
-    console.error(err.message);
-    if (!err.statusCode) err.statusCode = 500;
-    res.status(err.statusCode).send(err.message);
-});
+// // error handler
+// app.use(function (err, req, res, next) {
+//     console.error(err.message);
+//     if (!err.statusCode) err.statusCode = 500;
+//     res.status(err.statusCode).send(err.message);
+// });
