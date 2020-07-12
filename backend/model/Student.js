@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
-const Schema = mongoose.SchemaType;
+const Schema = mongoose.Schema;
+//monggose
 
-// Define collection and scheme
+// Define collection and schema
 let Student = new Schema({
     student_name: {
         type: String
