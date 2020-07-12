@@ -1,3 +1,5 @@
+![alt text](https://user-images.githubusercontent.com/47112861/87236467-1ca20380-c3b8-11ea-81a5-ab50144b346f.png)
+
 # Angular8MeanstackAngularMaterial
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.1.
